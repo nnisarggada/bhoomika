@@ -6,7 +6,7 @@ const Hero = () => {
       id="home"
       className="h-[calc(100vh-5rem)] flex flex-col justify-evenly items-center p-12 gap-10 lg:flex-row"
     >
-      <div className="flex flex-col h-full gap-20 justify-center items-center lg:items-start">
+      <div className="flex flex-col h-full gap-10 items-center lg:items-start">
         <h1 className="text-4xl font-bold text-center lg:text-8xl lg:text-left">
           The Journey Within
         </h1>
