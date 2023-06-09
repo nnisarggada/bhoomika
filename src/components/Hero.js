@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="h-[calc(100vh-5rem)] flex flex-col justify-evenly items-center p-12 gap-10">
+    <div
+      id="home"
+      className="h-[calc(100vh-5rem)] flex flex-col justify-evenly items-center p-12 gap-10"
+    >
       <h1 className="text-4xl font-bold">The Journey Within</h1>
       <h3 className="text-xl text-center">
         Without even an interval, we are continuously playing one or the other
