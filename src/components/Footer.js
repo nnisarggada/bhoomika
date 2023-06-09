@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-secondary text-background h-20 flex justify-center items-center text-sm">
+    <div className="bg-secondary text-background h-20 flex justify-center items-center text-sm lg:text-lg">
       <p>
         <span
           onClick={() => window.open("https://artistichumans.com", "_blank")}
