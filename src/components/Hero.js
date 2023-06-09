@@ -7,7 +7,9 @@ const Hero = () => {
       className="h-[calc(100vh-5rem)] flex flex-col justify-evenly items-center p-12 gap-10 lg:flex-row"
     >
       <div className="flex flex-col h-full gap-20 justify-center items-center lg:items-start">
-        <h1 className="text-4xl font-bold lg:text-8xl">The Journey Within</h1>
+        <h1 className="text-4xl font-bold text-center lg:text-8xl lg:text-left">
+          The Journey Within
+        </h1>
         <h3 className="text-xl text-center lg:text-2xl lg:text-left lg:w-2/3">
           Without even an interval, we are continuously playing one or the other
           character
