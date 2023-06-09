@@ -3,7 +3,7 @@ import React from "react";
 const Awards = () => {
   const AwardCard = ({ award, location, image }) => {
     return (
-      <div className="w-full h-80 bg-secondary rounded-xl">
+      <div className="w-full h-80 bg-secondary rounded-xl md:w-2/5 lg:w-1/5">
         <div className="w-full h-2/3">
           <img
             src={require("../assets/" + image + ".jpg")}
@@ -21,55 +21,57 @@ const Awards = () => {
 
   return (
     <div id="awards" className="flex flex-col items-center p-12 gap-10">
+      <div className="w-screen bg-[#000] flex justify-center">
+        <img
+          src={require("../assets/winner.jpg")}
+          alt="awards"
+          className="max-h-96"
+          loading="lazy"
+        />
+      </div>
       <h1 className="text-text text-4xl font-bold">Awards</h1>
       <h2 className="text-text text-xl text-center">
         With <span className="font-semibold text-accent">17 accolades </span>
         Bhoomika has won many awards across the nation since it's inception in
         2015
       </h2>
-      <div className="w-screen">
-        <img
-          src={require("../assets/winner.jpg")}
-          alt="awards"
-          className="w-full"
-          loading="lazy"
+      <div className="w-full flex flex-col justify-evenly gap-4 flex-wrap md:flex-row md:gap-y-16">
+        <AwardCard
+          award="Best Proscenium Play"
+          location="National Theatre Festival Baptizer 2016"
+          image="award1"
+        />
+        <AwardCard
+          award="Best Play"
+          location="National Theatre Festival BHAVAI 2016"
+          image="award2"
+        />
+        <AwardCard
+          award="Outstanding Performer"
+          location="National Theatre Festival BHAVAI 2016"
+          image="award3"
+        />
+        <AwardCard
+          award="Best Writer"
+          location="National Theatre Festival BHAVAI 2016"
+          image="award4"
+        />
+        <AwardCard
+          award="Best Play"
+          location="P.L. Deshpande Hindi One Act Play Competition 2016"
+          image="award5"
+        />
+        <AwardCard
+          award="Best Writer"
+          location="P.L. Deshpande Hindi One Act Play Competition 2016"
+          image="award6"
+        />
+        <AwardCard
+          award="Best Actor"
+          location="P.L. Deshpande Hindi One Act Play Competition 2016"
+          image="award7"
         />
       </div>
-      <AwardCard
-        award="Best Proscenium Play"
-        location="National Theatre Festival Baptizer 2016"
-        image="award1"
-      />
-      <AwardCard
-        award="Best Play"
-        location="National Theatre Festival BHAVAI 2016"
-        image="award2"
-      />
-      <AwardCard
-        award="Outstanding Performer"
-        location="National Theatre Festival BHAVAI 2016"
-        image="award3"
-      />
-      <AwardCard
-        award="Best Writer"
-        location="National Theatre Festival BHAVAI 2016"
-        image="award4"
-      />
-      <AwardCard
-        award="Best Play"
-        location="P.L. Deshpande Hindi One Act Play Competition 2016"
-        image="award5"
-      />
-      <AwardCard
-        award="Best Writer"
-        location="P.L. Deshpande Hindi One Act Play Competition 2016"
-        image="award6"
-      />
-      <AwardCard
-        award="Best Actor"
-        location="P.L. Deshpande Hindi One Act Play Competition 2016"
-        image="award7"
-      />
     </div>
   );
 };
