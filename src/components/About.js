@@ -7,10 +7,10 @@ const Awards = () => {
         id="about"
         className="bg-secondary flex flex-col items-center w-full p-6 py-12 gap-10 h-1/2 md:h-1/2 md:justify-evenly lg:flex-row"
       >
-        <h1 className="text-primary text-3xl font-bold text-center lg:text-7xl">
+        <h1 className="text-primary text-3xl font-bold text-center lg:text-5xl">
           About The Play
         </h1>
-        <h2 className="text-primary text-md text-center max-w-2xl md:text-xl lg:text-justify lg:text-3xl">
+        <h2 className="text-primary text-md text-center max-w-2xl md:text-xl lg:text-justify lg:text-2xl">
           A fascinating drama about the journey of a common man who, in order to
           get a solution to his problems, decides to meet a man who lives
           different characters in his real life. Ironically, the artist seeks
