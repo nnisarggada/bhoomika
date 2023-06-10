@@ -21,11 +21,11 @@ const Awards = () => {
 
   return (
     <div className="flex flex-col items-center gap-10">
-      <div id="awards" className="w-full flex flex-col items-center gap-10">
-        <h1 className="text-text text-5xl font-bold p-12 lg:text-7xl">
+      <div id="awards" className="w-full flex flex-col items-center">
+        <h1 className="text-text text-3xl font-bold p-12 lg:text-7xl">
           Awards
         </h1>
-        <h2 className="text-text text-xl text-center px-6 max-w-lg lg:text-3xl">
+        <h2 className="text-text text-lg text-center px-6 max-w-lg lg:text-3xl">
           With <span className="font-semibold text-accent">17 accolades </span>
           Bhoomika has won many awards across the nation since it's inception in
           2015

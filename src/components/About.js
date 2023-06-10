@@ -5,12 +5,12 @@ const Awards = () => {
     <div className="flex flex-col items-center h-[calc(100vh-5rem)]">
       <div
         id="about"
-        className="bg-secondary flex flex-col items-center w-full p-6 py-12 gap-10 md:h-2/3 md:justify-evenly lg:flex-row lg:h-1/2"
+        className="bg-secondary flex flex-col items-center w-full p-6 py-12 gap-10 h-1/2 md:h-1/2 md:justify-evenly lg:flex-row"
       >
-        <h1 className="text-primary text-5xl font-bold text-center md:text-7xl">
+        <h1 className="text-primary text-3xl font-bold text-center lg:text-7xl">
           About The Play
         </h1>
-        <h2 className="text-primary text-xl text-center max-w-2xl md:text-3xl lg:text-justify">
+        <h2 className="text-primary text-md text-center max-w-2xl md:text-xl lg:text-justify lg:text-3xl">
           A fascinating drama about the journey of a common man who, in order to
           get a solution to his problems, decides to meet a man who lives
           different characters in his real life. Ironically, the artist seeks
@@ -18,11 +18,18 @@ const Awards = () => {
           able to help each other?
         </h2>
       </div>
-      <div className="w-screen flex-grow lg:h-1/2 bg-[#000] flex justify-center">
+      <div className="w-screen flex flex-col justify-evenly h-1/2 bg-[#000] md:h-1/2 md:flex-row">
         <img
-          src={require("../assets/winner.jpg")}
+          src={require("../assets/winner1.jpg")}
           alt="awards"
           loading="lazy"
+          className="h-1/2 object-contain md:h-full md:w-1/2"
+        />
+        <img
+          src={require("../assets/winner2.jpg")}
+          alt="awards"
+          loading="lazy"
+          className="h-1/2 object-contain md:h-full md:w-1/2"
         />
       </div>
     </div>
