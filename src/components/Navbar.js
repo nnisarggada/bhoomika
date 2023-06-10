@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
       <div
         id="navmenu"
-        className="fixed top-20 -right-80 w-80 h-full bg-secondary bg-opacity-90 backdrop-blur-md"
+        className="fixed top-20 -right-80 w-80 h-full bg-secondary bg-opacity-90 backdrop-blur-md drop-shadow-2xl"
       >
         <ul className="p-8 w-full h-96 flex flex-col gap-4">
           <NavbarLink text="Home" link="home" />
