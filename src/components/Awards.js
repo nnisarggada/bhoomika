@@ -3,7 +3,7 @@ import React from "react";
 const Awards = () => {
   const AwardCard = ({ award, location, image }) => {
     return (
-      <div className="w-full h-80 bg-secondary rounded-xl md:w-2/5 lg:w-1/5">
+      <div className="w-full h-80 bg-secondary rounded-xl md:w-1/3 lg:w-1/4">
         <div className="w-full h-2/3">
           <img
             src={require("../assets/" + image + ".jpg")}
@@ -12,7 +12,7 @@ const Awards = () => {
           />
         </div>
         <div className="w-full h-1/3 flex flex-col justify-evenly p-4">
-          <h3 className="text-background text-xl font-semibold">{award}</h3>
+          <h3 className="text-background text-xl font-semibold">{award}</h3>{" "}
           <p className="text-background">{location}</p>
         </div>
       </div>
@@ -35,7 +35,7 @@ const Awards = () => {
         Bhoomika has won many awards across the nation since it's inception in
         2015
       </h2>
-      <div className="w-full flex flex-col justify-evenly gap-4 flex-wrap md:flex-row md:gap-y-16">
+      <div className="w-full flex flex-col justify-evenly gap-4 flex-wrap md:flex-row md:gap-y-16 lg:w-4/5">
         <AwardCard
           award="Best Proscenium Play"
           location="National Theatre Festival Baptizer 2016"
@@ -65,11 +65,6 @@ const Awards = () => {
           award="Best Writer"
           location="P.L. Deshpande Hindi One Act Play Competition 2016"
           image="award6"
-        />
-        <AwardCard
-          award="Best Actor"
-          location="P.L. Deshpande Hindi One Act Play Competition 2016"
-          image="award7"
         />
       </div>
     </div>
