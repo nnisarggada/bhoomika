@@ -29,9 +29,12 @@ const Navbar = () => {
     <div className="sticky top-0 z-50 w-full h-20 flex justify-between items-center bg-primary text-text px-8">
       <h1
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="text-4xl font-heading font-bold cursor-pointer hover:text-accent hover:scale-110 transition-all"
+        className="text-2xl font-heading font-bold cursor-pointer hover:text-background transition-all md:text-4xl"
       >
-        Bhoomika
+        Bhoomika ~ <span className="font-heading md:hidden">The Play</span>
+        <span className="font-heading hidden md:inline">
+          The Journey Within...
+        </span>
       </h1>
       <div
         onClick={() => {
