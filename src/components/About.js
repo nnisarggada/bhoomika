@@ -2,11 +2,8 @@ import React from "react";
 
 const Awards = () => {
   return (
-    <div className="flex flex-col items-center h-[calc(100vh-5rem)]">
-      <div
-        id="about"
-        className="bg-secondary flex flex-col items-center w-full p-6 py-12 gap-10 h-1/2 md:h-1/2 md:justify-evenly lg:flex-row"
-      >
+    <div id="about" className="h-section flex flex-col items-center]">
+      <div className="bg-secondary flex flex-col items-center w-full p-6 py-12 gap-10 h-1/2 md:h-1/2 md:justify-evenly lg:flex-row">
         <h1 className="text-primary text-3xl font-bold text-center lg:text-5xl">
           About The Play
         </h1>

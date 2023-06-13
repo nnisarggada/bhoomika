@@ -5,23 +5,25 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  try {
+    if (showMenu) {
+      document.getElementById("navmenu").classList.add("right-0");
+      document.getElementById("navmenu").classList.remove("-right-80");
+    } else {
+      document.getElementById("navmenu").classList.add("-right-80");
+      document.getElementById("navmenu").classList.remove("right-0");
+    }
+  } catch {}
+
   const NavbarLink = ({ text, link }) => {
     return (
-      <li
-        onClick={() => {
-          window.scrollTo({
-            top: document.getElementById(link).offsetTop - 80,
-            behavior: "smooth",
-          });
-          setShowMenu(false);
-          document.getElementById("navmenu").classList.remove("right-0");
-          document.getElementById("navmenu").classList.add("-right-80");
-          document.getElementById("navmenu").classList.add("transition-all");
-        }}
+      <a
+        href={link}
+        onClick={() => setShowMenu(false)}
         className="text-primary text-xl font-bold w-full h-1/4 flex justify-center items-center hover:cursor-pointer border-2 border-primary hover:bg-primary hover:text-text transition-all"
       >
         {text}
-      </li>
+      </a>
     );
   };
 
@@ -61,11 +63,11 @@ const Navbar = () => {
         className="fixed top-20 -right-80 w-80 h-full bg-secondary bg-opacity-90 backdrop-blur-md drop-shadow-2xl"
       >
         <ul className="p-8 w-full h-96 flex flex-col gap-4">
-          <NavbarLink text="Home" link="home" />
-          <NavbarLink text="About" link="about" />
-          <NavbarLink text="Awards" link="awards" />
-          <NavbarLink text="Shows" link="shows" />
-          <NavbarLink text="VOD" link="vod" />
+          <NavbarLink text="Home" link="#home" />
+          <NavbarLink text="About" link="#about" />
+          <NavbarLink text="Awards" link="#awards" />
+          <NavbarLink text="Shows" link="#shows" />
+          <NavbarLink text="VOD" link="#vod" />
         </ul>
       </div>
     </div>
