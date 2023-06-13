@@ -20,7 +20,7 @@ const Awards = () => {
   };
 
   return (
-    <div id="awards" className="flex flex-col items-center gap-10">
+    <div id="awards" className="pt-20 flex flex-col items-center gap-10">
       <div className="w-full flex flex-col items-center">
         <h1 className="text-text text-3xl font-bold p-12 lg:text-5xl">
           Awards

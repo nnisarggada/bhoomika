@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 w-full h-20 flex justify-between items-center bg-primary text-text px-8">
+    <div className="fixed top-0 left-0 z-50 w-full h-20 flex justify-between items-center bg-primary text-text px-8">
       <h1
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="text-2xl font-heading font-bold cursor-pointer hover:text-background transition-all md:text-4xl"
