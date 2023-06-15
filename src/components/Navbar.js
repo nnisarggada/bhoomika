@@ -66,8 +66,6 @@ const Navbar = () => {
           <NavbarLink text="Home" link="#home" />
           <NavbarLink text="About" link="#about" />
           <NavbarLink text="Awards" link="#awards" />
-          <NavbarLink text="Shows" link="#shows" />
-          <NavbarLink text="VOD" link="#vod" />
         </ul>
       </div>
     </div>

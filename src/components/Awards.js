@@ -30,6 +30,21 @@ const Awards = () => {
           Bhoomika has won many awards across the nation since it's inception in
           2015
         </h2>
+        <div className="w-screen flex flex-col justify-evenly h-1/2 bg-[#000] md:h-1/2 md:flex-row">
+          <img
+            src={require("../assets/winner1.jpg")}
+            alt="awards"
+            loading="lazy"
+            className="h-1/2 object-contain md:h-full md:w-1/2"
+          />
+          <img
+            src={require("../assets/winner2.jpg")}
+            alt="awards"
+            loading="lazy"
+            className="h-1/2 object-contain md:h-full md:w-1/2"
+          />
+        </div>
+
         <div className="w-full p-6 rounded-3xl flex flex-col justify-evenly gap-4 flex-wrap md:py-20 md:flex-row md:gap-y-16 lg:w-4/5">
           <AwardCard
             award="Best Proscenium Play"
